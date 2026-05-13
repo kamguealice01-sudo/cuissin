@@ -1,219 +1,319 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>recette camerounais</title>
+    <title>Recettes camerounaises</title>
+    <meta name="google-site-verification" content="PvD0MNPRtSFGZAePYsSaZOrv4y5r9NyT0cEHnykkEvc" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="c.css">
 </head>
 <body>
-    <header>     
-<nav class="navbar">
-     <div class="nar">
-      <a href="#" class="logo">A vos casserol <span class="by">by alice</span></a>
-      <div class="navline">
-       <ul> 
-           <li><a href="# acceuil"> acceuil</a></li>
-           <li><a href="#menu">menu</a></li>
-          <li><a href="contact.html">contact</a></li>
-         </ul>
-       </div>
+    <header>
+        <nav class="navbar">
+            <div class="nav-inner">
+                <h1 class="logo">A vos casserol <span>by alice</span></h1>
+                <div class="navline">
+                    <ul>
+                        <li><a href="#acceuil">Accueil</a></li>
+                        <li><a href="#apropos">À propos</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <button><a class="btn" href="http://localhost/inscription/index.php">S'inscrire</a></button>
+                    </ul>
+                    <button class="hamburger" aria-label="Ouvrir le menu"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero" id="acceuil">
+            <div class="hero-left">
+                <span class="eyebrow">Cuisine camerounaise, africaine et au-delà</span>
+                <h1>L'art de mieux <span>cuisiner</span></h1>
+                <p>Découvrez ensemble l'univers des plats du terroir, entre saveur et beauté. Embarquez pour une aventure gustative hors du commun.</p>
+                <div class="hero-actions">
+                    <a href="#apropos" class="btn-secondary">Découvrir</a>
+                    <button class="btn-primary" data-recipe="poulet-dg">Voir une recette</button>
+                </div>
+            </div>
+            <div class="hero-right">
+                <img src="image/TOP 10 Les plats Camerounais les plus populaires _ Kelianfood (1).jpg" alt="Plats camerounais">
+            </div>
+        </section>
+    </header>
+
+    <section class="about" id="apropos">
+        <div class="section-head">
+            <span>À propos</span>
+            <h2>Une passion pour les saveurs du Cameroun</h2>
+            <p>Nous célébrons la cuisine locale, les traditions et les recettes familiales pour offrir un menu riche, authentique et accessible.</p>
+        </div>
+        <div class="about-grid">
+            <article class="about-card">
+                <h3>Notre mission</h3>
+                <p>Partager les meilleures recettes camerounaises et inspirer chaque visiteur à créer des plats délicieux à la maison.</p>
+            </article>
+            <article class="about-card">
+                <h3>Nos valeurs</h3>
+                <p>Authenticité, qualité et convivialité sont au cœur de chaque recette, préparée avec des ingrédients du terroir.</p>
+            </article>
+            <article class="about-card">
+                <h3>Ce que vous trouverez</h3>
+                <p>Des plats traditionnels, des astuces de cuisson et des recettes détaillées pour réussir facilement vos repas.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="mn" id="menu">
+        <div class="contenur">
+            <div class="contenur-titre">
+                <h2 class="TI">Recettes emblématiques du Cameroun</h2>
+                <p>Cliquez sur «Voir la recette» pour découvrir les ingrédients et les étapes de préparation expliquées clairement.</p>
+            </div>
+
+            <div class="recipe-category">
+                <h3>Recettes classiques</h3>
+            </div>
+
+            <div class="plats">
+                <div class="card-plats">
+                    <img src="image/Poulet Directeur Général.jpg" alt="Poulet DG">
+                    <div class="plats-info">
+                        <h3>Poulet DG</h3>
+                        <p>Plat national composé de feuilles de ndolé, arachides, crevettes et morceaux de viande.</p>
+                        <button class="btn-recette" data-recipe="poulet-dg">Voir la recette</button>
+                    </div>
+                </div>
+
+                <div class="card-plats">
+                    <img src="image/Trinidad Chicken Pelau Recipe.jpg" alt="Riz sauté" loading="lazy">
+                    <div class="plats-info">
+                        <h3>Riz sauté</h3>
+                        <p>Riz local sauté aux légumes, épices et viande, idéal pour un repas rapide et savoureux.</p>
+                        <button class="btn-recette" data-recipe="riz-saute">Voir la recette</button>
+                    </div>
+                </div>
+
+                <div class="card-plats">
+                    <img src="image/Best Food ever🥹❤️🇨🇲 (1).jpg" alt="Poisson braisé" loading="lazy">
+                    <div class="plats-info">
+                        <h3>Poisson braisé</h3>
+                        <p>Poisson frais grillé aux épices, accompagné de bâton de manioc et de pâte de piment.</p>
+                        <button class="btn-recette" data-recipe="poisson-braise">Voir la recette</button>
+                    </div>
+                </div>
+
+                <div class="card-plats">
+                    <img src="image/RIZ SAUCE ARRACHIDE.jpg" alt="Riz sauce arachide" loading="lazy">
+                    <div class="plats-info">
+                        <h3>Riz sauce arachide</h3>
+                        <p>Riz parfumé servi avec une sauce tendre à base de pâte d'arachide et d'épices.</p>
+                        <button class="btn-recette" data-recipe="riz-arachide">Voir la recette</button>
+                    </div>
+                </div>
+
+                <div class="card-plats">
+                    <img src="image/BHB.jpeg" alt="BHB" loading="lazy">
+                    <div class="plats-info">
+                        <h3>BHB</h3>
+                        <p>Spécialité riche en saveurs, préparée avec des ingrédients frais et épicés.</p>
+                        <button class="btn-recette" data-recipe="bhb">Voir la recette</button>
+                    </div>
+                </div>
+
+                <div class="card-plats">
+                    <img src="image/télécharger (19).jpg" alt="Soya" loading="lazy">
+                    <div class="plats-info">
+                        <h3>Soya</h3>
+                        <p>Brochettes de viande marinées et grillées, accompagnées d'une sauce parfumée.</p>
+                        <button class="btn-recette" data-recipe="soya">Voir la recette</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-category">
+                <h3>Recettes traditionnelles</h3>
+            </div>
+
+            <div class="plats">
+                <div class="card-plats">
+                    <img src="image/Cameroonian Finest Fufu and Njama Njama_Khati Khati (1).jpg" alt="Koki" loading="lazy">
+                    <div class="plats-info">
+                        <h3>Koki</h3>
+                        <p>Plat traditionnel à base de haricots, parfumé à l'huile de palme et aux épices.</p>
+                        <button class="btn-recette" data-recipe="koki">Voir la recette</button>
+                    </div>
+                </div>
+
+                <div class="card-plats">
+                    <img src="image/Mbongo tjobi, la tradition culinaire des Bassas du Cameroun.jpg" alt="Mbongo tjobi" loading="lazy">
+                    <div class="plats-info">
+                        <h3>Mbongo tjobi</h3>
+                        <p>Sauce noire parfumée aux épices locales, souvent servie avec du poisson ou de la viande.</p>
+                        <button class="btn-recette" data-recipe="mbongo-tjobi">Voir la recette</button>
+                    </div>
+                </div>
+
+                <div class="card-plats">
+                    <img src="image/Best Most Authentic Cameroonian Corn Porridge_ Corn Chaff (2).jpg" alt="Corn chaff" loading="lazy">
+                    <div class="plats-info">
+                        <h3>Corn chaff</h3>
+                        <p>Ragoût de maïs, haricots, viande et condiments, très populaire dans la cuisine camerounaise.</p>
+                        <button class="btn-recette" data-recipe="corn-chaff">Voir la recette</button>
+                    </div>
+                </div>
+
+                <div class="card-plats">
+                    <img src="image/Meilleur recette Pommes de Terre Pilé avec vidéo_ La meilleur recette Cameroun _ Kelianfood (1).jpg" alt="Pomme pilé" loading="lazy">
+                    <div class="plats-info">
+                        <h3>Pomme pilé</h3>
+                        <p>Purée de pommes de terre aux haricots noirs, huile de palme et oignon.</p>
+                        <button class="btn-recette" data-recipe="pomme-pile">Voir la recette</button>
+                    </div>
+                </div>
+
+                <div class="card-plats">
+                    <img src="image/b43a0be4-0229-43d0-9340-f6fff0b856c7.jpeg" alt="Eru" loading="lazy">
+                    <div class="plats-info">
+                        <h3>Eru</h3>
+                        <p>Feuilles d'okok et waterleaf mijotées avec huile de palme, viande fumée et crevettes.</p>
+                        <button class="btn-recette" data-recipe="eru">Voir la recette</button>
+                    </div>
+                </div>
+
+                <div class="card-plats">
+                    <img src="image/Les plats Camerounais les plus populaires (1).jpg" alt="Taro sauce jaune" loading="lazy">
+                    <div class="plats-info">
+                        <h3>Taro sauce jaune</h3>
+                        <p>Taro pilé servi avec une sauce jaune à l'huile de palme, sel et épices.</p>
+                        <button class="btn-recette" data-recipe="taro-jaune">Voir la recette</button>
+                    </div>
+                </div>
+
+                <div class="card-plats">
+                    <img src="image/METS DE PISTAGE.jpeg" alt="Mets de pistache" loading="lazy">
+                    <div class="plats-info">
+                        <h3>Mets de pistache</h3>
+                        <p>Plat riche en texture, préparé avec des légumes, épices et viande mijotée.</p>
+                        <button class="btn-recette" data-recipe="pistache">Voir la recette</button>
+                    </div>
+                </div>
+
+                <div class="card-plats">
+                    <img src="image/télécharger (14).jpg" alt="Ndolé royal" loading="lazy">
+                    <div class="plats-info">
+                        <h3>Ndolé royal</h3>
+                        <p>Ndolé crémeux servi avec viande, crevettes et accompagnement de manioc.</p>
+                        <button class="btn-recette" data-recipe="ndole-royal">Voir la recette</button>
+                    </div>
+                </div>
+
+                <div class="card-plats">
+                    <img src="image/KOKI.jpeg" alt="KOKI" loading="lazy">
+                    <div class="plats-info">
+                        <h3>KOKI</h3>
+                        <p>Ndolé crémeux servi avec viande, crevettes et accompagnement de manioc.</p>
+                        <button class="btn-recette" data-recipe="ndole-royal">Voir la recette</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="point">
+                <div class="box-container">
+                    <div class="box">
+                        <h3>20+</h3>
+                        <p>recettes</p>
+                    </div>
+                    <div class="box">
+                        <h3>490+</h3>
+                        <p>satisfactions clients</p>
+                    </div>
+                    <div class="box">
+                        <h3>4+</h3>
+                        <p>ans d'existence</p>
+                    </div>
+                    <div class="box">
+                        <h3>174+</h3>
+                        <p>personnes inscrites</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="section-head">
+            <span>Contact</span>
+            <h2>Entrons en contact</h2>
+            <p>Vous avez une question ou envie d'en savoir plus ? Écrivez-nous ou utilisez les informations ci-dessous.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <article class="contact-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>Téléphone</h3>
+                    <p>+237 6 57 87 56 89</p>
+                </article>
+                <article class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>contact@avoscasserol.com</p>
+                </article>
+                <article class="contact-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Adresse</h3>
+                    <p>Douala, Cameroun</p>
+                </article>
+            </div>
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                <button type="submit" class="btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h2>La passion de cuisiner</h2>
+                <p class="R">Retrouvez des recettes traditionnelles et gourmandes, inspirées par la cuisine camerounaise et partagées avec authenticité.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#acceuil">Accueil</a>
+                <a href="#apropos">À propos</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 A vos casserol. Tous droits réservés.</p>
+            <a href="#acceuil">Aller en haut</a>
+        </div>
+    </footer>
+
+    <div class="recipe-modal" id="recipe-modal" aria-hidden="true">
+        <div class="modal-panel">
+            <button class="modal-close" aria-label="Fermer">×</button>
+            <div class="modal-body">
+                <span class="modal-category">Recette</span>
+                <h3 class="modal-title"></h3>
+                <p class="modal-description"></p>
+                <div class="modal-details">
+                    <h4>Ingrédients</h4>
+                    <ul class="modal-ingredients"></ul>
+                    <h4>Préparation</h4>
+                    <ol class="modal-instructions"></ol>
+                </div>
+            </div>
+        </div>
     </div>
-</nav>
 
-
-<section class="heros" id="acceuil">
-    <div class="gauche">
-   <h1> l'Art de mieux  <br><span>cuisiner</span></h1>
-   <p class="txt">découvrons ensemble l'univert des plats du terrios et d'alleuir entre saveur et beauté embarquons ensemble pour une aventure gustative hors du commun</p>
-   <button class="me">découvrir</button>
-    
-    </div>
-    <div class="droit">
-        <img src="image/TOP 10 Les plats Camerounais les plus populaires _ Kelianfood (1).jpg" alt="image" height="350" width="700" ">
-    </div>
-</section>
-     </header>
-
-<section class="mn" id="menu">
- <div class="contenur">
-    <div class="contenur-titre">
-        <h2>recette des mets les plus populaires de la gastronomie camerounaise </h2>
-        <p>cliquez sur voir la recette sous chaque plats pour découvrir les ingredients et les étapes de cuisson bien détaillées</p>
-        <h3>quellque mets classique camerounais </h3>
-    </div>
-    <div class="plats">
-        <!--plats 1 : poulets -->
-        <div class="card-plats">
-            <img src="image/Poulet Directeur Général.jpg" alt="dg">
-        <div class="plats-info">
-            <h3>poulets-dg</h3>
-            <p>le plats national du cameroun : composer principalement de feuille de ndolé , arachides, crevettes et viandes.</p>
-            <button class="btn-recette" data-bs-toggle="modal" data-bs-target="#modal-ndolé">voir la recette</button>
-        </div>
-        </div>
-
-
-          <!--plats 2 : RIZ SAUTER -->
-        <div class="card-plats">
-            <img src="image/Trinidad Chicken Pelau Recipe.jpg" alt="dg" style="object-fit: cover; width: 100%; height: 220px; ">
-           <div class="plats-info">
-            <h3>riz sauté aux légumes et épices du terrios </h3>
-            <p> riz local sauter aux legumes et viandes trés rapides a faires  .</p>
-            <button class="btn-recette" data-bs-toggle="modal" data-bs-target="#modal-riz sauter">voir la recette</button>
-        </div>
-        </div>
-         
-        <!--plats 3: poisson braisé -->
-        <div class="card-plats">
-            <img src="image/Best Food ever🥹❤️🇨🇲 (1).jpg " alt="dg" height="300">
-        <div class="plats-info">
-            <h3>poisson braisé</h3>
-            <p>poisson frais grillé aux épices accompagner de baton de manoic et de pate de piment .</p>
-            <button class="btn-recette" data-bs-toggle="modal" data-bs-target="#modal-poisson braisé">voir la recette</button>
-              </div>
-              </div>
-
-               <!--plats 4:  -->
-        <div class="card-plats">
-            <img src="image/RIZ SAUCE ARRACHIDE.jpg" alt="dg"  style="object-fit: cover; width: 100%; height: 220px;">
-        <div class="plats-info">
-            <h3> Riz sauce arrachide </h3>
-            <p>poisson frais grillé aux épices accompagner de baton de manoic et de pate de piment .</p>
-            <button class="btn-recette" data-bs-toggle="modal" data-bs-target="#modal-poisson braisé">voir la recette</button>
-              </div>
-              </div>
-
-               <!--plats 5: bhb -->
-        <div class="card-plats">
-            <img src="image/BHB.jpeg" alt="dg" height="300">
-        <div class="plats-info">
-            <h3> BHB </h3>
-            <p>poisson frais grillé aux épices accompagner de baton de manoic et de pate de piment .</p>
-            <button class="btn-recette" data-bs-toggle="modal" data-bs-target="#modal-poisson braisé">voir la recette</button>
-              </div>
-              </div>
-
-               <!--plats 6: soya -->
-        <div class="card-plats">
-            <img src="image/télécharger (19).jpg" alt="dg" height="300"  style="object-fit: cover; width: 100%; height: 220px;">
-        <div class="plats-info">
-            <h3> soya </h3>
-            <p>poisson frais grillé aux épices accompagner de baton de manoic et de pate de piment .</p>
-            <button class="btn-recette" data-bs-toggle="modal" data-bs-target="#modal-poisson braisé">voir la recette</button>
-              </div>
-              </div>
-     </div>
-
- <div class="traditionel">
-        <h2> les mets traditionel les plus emblématique du cameroun </h2>
-        <p>chaque recette raconte une histoire sur la tradition culinaire du pays </p>
-    </div>
-
-           <div class="plats">
-        <!--plats 7 : KATIKATI -->
-        <div class="card-plats">
-            <img src="image/Cameroonian Finest Fufu and Njama Njama_Khati Khati (1).jpg" style="object-fit: cover; width: 100%; height: 220px;">
-        <div class="plats-info">
-            <h3>fufu and njama njama khati_khati </h3>
-            <p>plats traditionel emblématique de la zone anglophone du cameroun composer principalement trois piéces :couscous de mais , légume sauter et de poulets du village grillé vraie regale.</p>
-            <button class="btn-recette" data-bs-toggle="modal" data-bs-target="#modal-khati_khati">voir la recette</button>
-        </div>
-        </div>
-
-        <!--plats 8 : mbongo tchobi -->
-        <div class="card-plats">
-            <img src="image/Mbongo tjobi, la tradition culinaire des Bassas du Cameroun.jpg" alt="dg">
-        <div class="plats-info">
-            <h3>Mbongo tjobi</h3>
-            <p>sauce noire parfumer aux épices locales et piosson d'eau douces un vrai délices .</p>
-            <button class="btn-recette" data-bs-toggle="modal" data-bs-target="#modal-mbongo">voir la recette</button>
-        </div>
-        </div>
-
-        <!--plats 9 : corn chaff -->
-        <div class="card-plats">
-            <img src="image/Best Most Authentic Cameroonian Corn Porridge_ Corn Chaff (2).jpg" alt="dg" style="object-fit: cover; width: 100%; height: 220px;">
-        <div class="plats-info">
-            <h3>corn chaff</h3>
-            <p> authentic plats camerounais faire a base de mais, 'harricot , viande et condiment locaux .</p>
-            <button class="btn-recette" data-bs-toggle="modal" data-bs-target="#modal-corn_chaff">voir la recette</button>
-        </div>
-        </div>
-
-        <!--plats 10 : pilé -->
-        <div class="card-plats">
-            <img src="image/Meilleur recette Pommes de Terre Pilé avec vidéo_ La meilleur recette Cameroun _ Kelianfood (1).jpg" alt="dg" style="object-fit: cover; width: 100%; height: 220px;">
-        <div class="plats-info">
-            <h3>pomme pilé</h3>
-            <p> pilé de pomme de terre et d'harricot noire , d'huile de palme  et d'oignion .</p>
-            <button class="btn-recette" data-bs-toggle="modal" data-bs-target="#modal-pilé">voir la recette</button>
-        </div>
-    </div>
-
-        <!--plats 11: eru -->
-        <div class="card-plats">
-            <img src="image/b43a0be4-0229-43d0-9340-f6fff0b856c7.jpeg" alt="dg" style="object-fit: cover; width: 100%; height: 220px;">
-        <div class="plats-info">
-            <h3>Eru and water_fufu</h3>
-            <p> plats emblématique du cameroun faire a base de feuille d'okok et waterleaf, huile traditionell de palme et beaucoup de viande poisson fumer et crevette sécher vrais master class .</p>
-            <button class="btn-recette" data-bs-toggle="modal" data-bs-target="#modal-eru">voir la recette</button>
-        </div>
-        </div>
-
-        
-        <!--plats 12 : taro -->
-        <div class="card-plats">
-            <img src="image/Les plats Camerounais les plus populaires (1).jpg" alt="dg">
-        <div class="plats-info">
-            <h3>taro sauce jaune</h3>
-            <p> plats traditionnel de la region du ouest cameroun , ce plats est realiser a base de taro pilé dans un mortier et de sauce jaune obstaclé faire avec de l'huile de palme, de sel germe et d'eau .</p>
-            <button class="btn-recette" data-bs-toggle="modal" data-bs-target="#modal-taro">voir la recette</button>
-        </div>
-        </div>
-
-         <!--plats 13 : pilé -->
-        <div class="card-plats">
-            <img src="image/METS DE PISTAGE.jpeg" alt="dg" >
-        <div class="plats-info">
-            <h3> mets de pistache </h3>
-            <p> pilé de pomme de terre et d'harricot noire , d'huile de palme  et d'oignion .</p>
-            <button class="btn-recette" data-bs-toggle="modal" data-bs-target="#modal-pilé">voir la recette</button>
-        </div>
-    </div>
-
-     <!--plats 14 : pilé -->
-        <div class="card-plats">
-            <img src="image/télécharger (14).jpg" alt="dg"  style="object-fit: cover; width: 100%; height: 220px;" >
-        <div class="plats-info">
-            <h3> ndolé royal </h3>
-            <p> pilé de pomme de terre et d'harricot noire , d'huile de palme  et d'oignion .</p>
-            <button class="btn-recette" data-bs-toggle="modal" data-bs-target="#modal-pilé">voir la recette</button>
-        </div>
-    </div>
-
-     <!--plats 12 : koki  -->
-        <div class="card-plats">
-            <img src="image/KOKI.jpeg" alt="dg"  style="object-fit: cover; width: 100%; height: 220px;">
-        <div class="plats-info">
-            <h3> koki </h3>
-            <p> pilé de pomme de terre et d'harricot noire , d'huile de palme  et d'oignion .</p>
-            <button class="btn-recette" data-bs-toggle="modal" data-bs-target="#modal-pilé">voir la recette</button>
-        </div>
-    </div>
-
-    </div> 
- </div>
-
-
-</section>
-
-<section class="contact">
-
-</section>
-    
-    
-<footer></footer>
-
+    <script src="script.js"></script>
 </body>
 </html>

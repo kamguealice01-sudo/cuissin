@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(139deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container{
+    background-color: white;
+    width: 100%;
+    max-width: 480px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(139deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.header h2 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.form-container{
+    padding: 40px 30px;
+}
+
+.input_group{
+    margin-bottom: 24px;
+    position: relative;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+    font-size: 17px;
+}
+
+input{
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus{
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
+}
+
+.password-wrapper{
+    position: relative;
+}
+
+.toggle-password{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    user-select: none;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    z-index: 10;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+    padding: 8px 12px;
+    transition: all 0.2s ease;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.error{
+    color: #e74c3c;
+    font-size: 13.5px;
+    margin-top: 6px;
+    min-height: 18px;
+}
+
+button{
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(139deg, #667eea 0%, #764ba2 );
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+
+}
+
+button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.5);
+}
+
+button:disabled{
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#message {
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    display: none;
+}
+
+.succes { background: #41d062; color: #a3c9ac;}
+.error-msg { background: #f8d7da; color:#721c24;}
